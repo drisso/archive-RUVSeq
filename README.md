@@ -9,4 +9,4 @@ biocLite("RUVSeq")
 ## R CMD check results
 
 * Bioconductor: [build/check reports](http://master.bioconductor.org/checkResults/devel/bioc-LATEST/RUVSeq/)
-* Travis CI: 
+* Travis CI: [![Build Status](https://travis-ci.org/drisso/RUVSeq.svg?branch=master)](https://travis-ci.org/drisso/RUVSeq)
