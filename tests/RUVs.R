@@ -42,3 +42,16 @@ r3 <- RUVs(mat, 1:10, k=1, differences)
 print(table(mat==0))
 print(table(r3$normalizedCounts==0))
 
+## make groups
+factor1 <- rep(c("a", "b", "c"), each=3)
+factor2 <- c(rep("a", 4), rep("b", 2), rep("c", 3))
+factor3 <- rep(1:6, each=2)
+
+makeGroups(factor1)
+makeGroups(as.factor(factor1))
+makeGroups(factor2)
+makeGroups(as.factor(factor2))
+makeGroups(factor3)
+makeGroups(as.factor(factor3))
+
+
