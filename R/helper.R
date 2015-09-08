@@ -5,6 +5,7 @@
 #' smaller sets are padded with -1 values.
 #' 
 #' @param xs A vector indicating membership in a group.
+#' @author Kamil Slowikowski
 #' @seealso \code{\link{RUVs}}
 #' @examples
 #'  makeGroups(c("A","B","B","C","C","D","D","D","A"))

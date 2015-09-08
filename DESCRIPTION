@@ -8,7 +8,7 @@ Authors@R: c(person("Davide", "Risso", email = "risso.davide@gmail.com",
 	          role = c("aut", "cre", "cph")),
 	     person("Sandrine", "Dudoit", role = "aut"),
 	     person("Lorena", "Pantano", role = "ctb"))
-Author: Davide Risso [aut, cre, cph], Sandrine Dudoit [aut], Lorena Pantano [ctb]
+Author: Davide Risso [aut, cre, cph], Sandrine Dudoit [aut], Lorena Pantano [ctb], Kamil Slowikowski [ctb]
 Maintainer: Davide Risso <risso.davide@gmail.com>
 Date: 04-15-2014
 Imports: methods, MASS

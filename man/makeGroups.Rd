@@ -17,6 +17,9 @@ smaller sets are padded with -1 values.
 \examples{
 makeGroups(c("A","B","B","C","C","D","D","D","A"))
 }
+\author{
+Kamil Slowikowski
+}
 \seealso{
 \code{\link{RUVs}}
 }
