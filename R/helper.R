@@ -18,3 +18,7 @@ makeGroups <- function(xs) {
   }
   groups
 }
+
+.isWholeNumber <- function(x, tol = .Machine$double.eps^0.5) {
+    !is.na(x) & abs(x - round(x)) < tol
+}
