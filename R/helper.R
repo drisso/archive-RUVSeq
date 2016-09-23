@@ -1,9 +1,9 @@
 #' Make a matrix suitable for use with RUVSeq methods such as \code{\link{RUVs}}.
-#' 
+#'
 #' Each row in the returned matrix corresponds to a set of replicate samples.
 #' The number of columns is the size of the largest set of replicates; rows for
 #' smaller sets are padded with -1 values.
-#' 
+#'
 #' @param xs A vector indicating membership in a group.
 #' @author Kamil Slowikowski
 #' @seealso \code{\link{RUVs}}

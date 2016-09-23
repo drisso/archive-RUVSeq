@@ -7,13 +7,13 @@ setMethod(
               warning(paste0("The expression matrix does not contain counts.\n",
                              "Please, pass a matrix of counts (not logged) or set isLog to TRUE to skip the log transformation"))
             }
-            
+
             if(isLog) {
               Y <- t(x)
             } else {
               Y <- t(log(x+epsilon))
             }
-            
+
           scIdx <- scIdx[rowSums(scIdx > 0) >= 2, , drop = FALSE]
             Yctls <- matrix(0, prod(dim(scIdx)), ncol(Y))
             m <- nrow(Y)

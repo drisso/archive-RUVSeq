@@ -2,18 +2,17 @@ setMethod(
           f = "RUVg",
           signature = signature(x="matrix", cIdx="ANY", k="numeric"),
           definition = function(x, cIdx, k, drop=0, center=TRUE, round=TRUE, epsilon=1, tolerance=1e-8, isLog=FALSE) {
-            
             if(!isLog && !all(.isWholeNumber(x))) {
                 warning(paste0("The expression matrix does not contain counts.\n",
                                "Please, pass a matrix of counts (not logged) or set isLog to TRUE to skip the log transformation"))
             }
-            
+
             if(isLog) {
                 Y <- t(x)
             } else {
                 Y <- t(log(x+epsilon))
             }
-          
+
             if (center) {
               Ycenter <- apply(Y, 2, function(x) scale(x, center = TRUE, scale=FALSE))
             } else {
