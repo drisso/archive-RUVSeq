@@ -74,7 +74,7 @@ setMethod(
             } else {
               counts <- normCounts(x)
             }
-            retval <- RUVs(counts, cIdx, k, scIdx, round, epsilon, tolerance, isLog=FALSE)
+            retval <- RUVs(counts, cIdx, k, scIdx, round, epsilon, tolerance, isLog=isLog)
             newSeqExpressionSet(counts = counts(x),
                                 normalizedCounts = retval$normalizedCounts,
                                 phenoData = cbind(pData(x), retval$W)
